@@ -9,8 +9,8 @@ function App() {
   useEffect(()=>{
     async function fetchpoke(){
       let pokemon=[];
-      for(let i=0;i<=20;i++){
-        let response=await fetch("https://pokeapi.co/api/v2/pokemon/25");
+      for(let i=1;i<=20;i++){
+        let response=await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
         let data=await response.json();
         pokemon.push({
           id:data.id,
@@ -21,7 +21,7 @@ function App() {
       setcards(pokemon);
     } 
     fetchpoke();
-  })
+  },[])
   return (
     <div className="h-screen bg-[url('/pokemon-bg.jpg')] flex flex-col">
     <Header/>

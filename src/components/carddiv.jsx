@@ -4,11 +4,15 @@ export default function Carddiv({difficulty,cards}){
     if(difficulty=="easy")ncards=6;
     else if(difficulty=="medium")ncards=12;
     else ncards=20;
+    const gamecards=cards.slice(0,ncards);
     return(
-        cards.map(card=>{
+    <div className="flex gap-12 flex-wrap ml-15">
+        {gamecards.map(card=>{
+            return(
             <Card key={card.id}
-            pokemon={card}
-            difficulty={difficulty}/>
-        })
-    )
+            pokemon={card}/>
+            );
+        })}
+        </div>
+    );
 }
