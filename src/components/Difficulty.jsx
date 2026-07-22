@@ -6,8 +6,8 @@ export default function Difficulty({setdifficulty}){
             <div className="flex items-center font-['Jim_Nightshade'] text-3xl">Select Your Level</div>
             <div className="mt-6 flex items-center gap-6 font-['Jim_Nightshade'] ">
     <Button onClick={()=>setdifficulty('easy')} className="bg-yellow-500  w-25 p-8 text-3xl ">Easy</Button>
-    <Button onClick={()=>setdifficulty('easy')} className="bg-red-500   w-25 p-8 text-3xl">Medium</Button>
-    <Button onClick={()=>setdifficulty('easy')} className ="w-25 p-8 text-3xl">Difficult</Button>
+    <Button onClick={()=>setdifficulty('medium')} className="bg-red-500   w-25 p-8 text-3xl">Medium</Button>
+    <Button onClick={()=>setdifficulty('hard')} className ="w-25 p-8 text-3xl">Difficult</Button>
     </div>
     </div>
     );
