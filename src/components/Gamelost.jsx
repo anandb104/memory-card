@@ -1,7 +1,10 @@
 import {Card as Shadcard,CardContent} from "./ui/card.jsx"
 import {Button} from "./ui/button.jsx";
 import pokesad from "/pokemonlose.gif";
+import gamelostsound from "../assets/gamelost.mp3"
 export default function Gamelost({setscore,setdifficulty,setcardsid,setresult}){
+    let gamelostaudio=new Audio(gamelostsound);
+    gamelostaudio.play();
     return(
         <Shadcard 
             className="h-150 w-150 hover:shadow-2xl transition-all cursor-pointer duration-300 hover:rotate-6 hover:scale-105">

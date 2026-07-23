@@ -1,5 +1,7 @@
 import {Card as Shadcard,CardContent} from "./ui/card.jsx"
+import shufflesound from "../assets/shuffle.mp3"
 export default function Card({pokemon,setscore,setcardsid,setresult,cardsid,score,ncards,cards,setcards}){
+    let shuffleaudio=new Audio(shufflesound);
     function shuffled(cards){
         let shuffle=[...cards];
         let sz=shuffle.length;
@@ -23,6 +25,7 @@ return(
         return;
     }
     setcards(shuffled(cards));
+    shuffleaudio.play();
     }} className="h-40 w-40 hover:shadow-2xl transition-all cursor-pointer duration-300 hover:rotate-6 hover:scale-105">
     <CardContent className="flex flex-col items-center justify-center font-['Jim_Nightshade'] ">
         <img src={pokemon.image} alt={pokemon.name} className="h-24 w-24"></img>
