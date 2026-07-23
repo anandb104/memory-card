@@ -10,7 +10,7 @@ export default function Gamelost({setscore,setdifficulty,setcardsid,setresult}){
                 <div className="text-3xl capitalize">Don't Give Up, Trainer!
                Even the strongest Pokémon Trainers lose battles.
                 Learn from this one and come back stronger!</div>
-               <div className="text-3xl capitalize">Play Again?</div>
+               <div className="text-3xl capitalize ml-7">Play Again?</div>
                <div className="flex gap-12">
                <Button onClick={()=>{setscore(0);
                 setresult("playing");
