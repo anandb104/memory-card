@@ -1,7 +1,10 @@
 import {Card as Shadcard,CardContent} from "./ui/card.jsx"
 import {Button} from "./ui/button.jsx";
 import pokehappy from "/pokemonwin.gif";
+import gamewonsound from "../assets/gamewon.mp3"
 export default function Gamewon({setscore,setdifficulty,setcardsid,setresult}){
+     let gamewonaudio=new Audio(gamewonsound);
+     gamewonaudio.play();
     return(
         <Shadcard 
             className="h-150 w-150 hover:shadow-2xl transition-all cursor-pointer duration-300 hover:rotate-6 hover:scale-105">
