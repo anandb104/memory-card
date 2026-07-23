@@ -1,12 +1,12 @@
 import {Card as Shadcard,CardContent} from "./ui/card.jsx"
 import {Button} from "./ui/button.jsx";
-import favicon from "/favicon.png";
+import pokehappy from "/pokemonwin.gif";
 export default function Gamewon({setscore,setdifficulty,setcardsid,setresult}){
     return(
         <Shadcard 
             className="h-150 w-150 hover:shadow-2xl transition-all cursor-pointer duration-300 hover:rotate-6 hover:scale-105">
             <CardContent className="flex flex-col gap-2 items-center justify-center font-['Jim_Nightshade'] ">
-                <img src={favicon} alt="Winning Gif" className="h-75 w-75"></img>
+                <img src={pokehappy} alt="Winning Gif" className="h-75 w-75"></img>
                 <div className="text-3xl capitalize">You Won!!</div>
                 <div className="text-3xl capitalize ml-7">Congratulations, Trainer!
 You remembered every Pokémon and conquered the challenge.

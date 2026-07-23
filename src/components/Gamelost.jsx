@@ -1,12 +1,12 @@
 import {Card as Shadcard,CardContent} from "./ui/card.jsx"
 import {Button} from "./ui/button.jsx";
-import favicon from "/favicon.png";
+import pokesad from "/pokemonlose.gif";
 export default function Gamelost({setscore,setdifficulty,setcardsid,setresult}){
     return(
         <Shadcard 
             className="h-150 w-150 hover:shadow-2xl transition-all cursor-pointer duration-300 hover:rotate-6 hover:scale-105">
             <CardContent className="flex flex-col gap-4 items-center justify-center font-['Jim_Nightshade'] ">
-                <img src={favicon} alt="Winning Gif" className="h-75 w-75"></img>
+                <img src={pokesad} alt="Winning Gif" className="h-75 w-75"></img>
                 <div className="text-3xl capitalize">You Lost</div>
                 <div className="text-3xl capitalize">Don't Give Up, Trainer!
                Even the strongest Pokémon Trainers lose battles.
