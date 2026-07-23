@@ -1,5 +1,6 @@
 import Card from "./Card.jsx"
 export default function Carddiv({difficulty,cards,setscore,setresult,setcardsid,cardsid,score}){
+    console.log("difficulty:", difficulty);
     let ncards=0;
     if(difficulty=="easy")ncards=6;
     else if(difficulty=="medium")ncards=12;
