@@ -1,5 +1,5 @@
 import Card from "./Card.jsx"
-export default function Carddiv({difficulty,cards}){
+export default function Carddiv({difficulty,cards,score,setscore}){
     let ncards=0;
     if(difficulty=="easy")ncards=6;
     else if(difficulty=="medium")ncards=12;
@@ -10,7 +10,8 @@ export default function Carddiv({difficulty,cards}){
         {gamecards.map(card=>{
             return(
             <Card key={card.id}
-            pokemon={card}/>
+            pokemon={card}
+            score={score} setscore={setscore}/>
             );
         })}
         </div>
